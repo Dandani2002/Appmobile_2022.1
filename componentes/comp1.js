@@ -3,8 +3,8 @@ import { StyleSheet, View, Text } from 'react-native';
 
 export default function Comp1(){
     return(
-        <View styles={styles.container}>
-        <Text styles={styles.title}>Metrônomo</Text>
+        <View style={styles.container}>
+        <Text style={styles.title}>Metrônomo</Text>
         </View>
     );
 }
@@ -12,23 +12,22 @@ export default function Comp1(){
 const styles = StyleSheet.create({
     container: {
         display: "flex",
-        justifyContent: "center",
+        justifyContent: "top",
         alignItems: "center",
-        width: 100% 
         flex: 1,
         padding: 24,
         backgroundColor: "#eaeaea"
     },
       title: {
-        marginTop: 16,
-        paddingVertical: 8,
-        borderWidth: 4,
+        marginTop: 20,
+        paddingVertical: 4,
+        borderWidth: 3,
         borderColor: "#20232a",
         borderRadius: 6,
-        backgroundColor: "#61dafb",
+        backgroundColor: "#2786f2",
         color: "#20232a",
         textAlign: "center",
-        fontSize: 30,
+        fontSize: 40,
         fontWeight: "bold"
       }
     });
